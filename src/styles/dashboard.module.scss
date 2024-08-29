@@ -1,0 +1,159 @@
+.container {
+  display: flex;
+}
+
+.sidebar {
+  width: 223.25px;
+  height: 100vh;
+  background-color: var(--bg-primary-color);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-right: 0.62px solid var(--border-color);
+}
+
+.logocnt {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 75%;
+}
+
+.mainContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  height: 90px;
+  padding: 0 40px;
+  background-color: var(--bg-primary-color);
+  border-bottom: 0.62px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.nav { 
+  height: 100%;
+}
+
+.menu {
+    position: relative;
+    margin: 0 !important;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 100%;
+    border-radius: 20px;
+    gap: 56px;
+
+li {
+    height: 100%;
+    display: inline-block;
+    align-items: center;
+    list-style-type: none;     
+}
+}
+
+.bottomBorder {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 35px;
+    height: 5px;
+    margin: 0;
+    border: 0;
+    border-radius: 20px;
+    background-color: var(--primary-color);
+}
+
+.menu li a {
+  text-decoration: none;
+  color: var(--Black, #0d0f52);
+  font-family: "Proxima Nova";
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.menu {
+  li .active {
+    font-weight: 700;
+
+    .bottomBorder {
+        left: 100%;
+    }
+    
+  }
+}
+
+.navRight {
+  display: inline-flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.language p {
+  color: var(--Black, #0d0f52);
+  font-family: "Proxima Nova";
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  opacity: 0.5;
+}
+
+.notificationIcon {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+
+  .icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .badge {
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    background-color: rgba(45, 145, 254, 1);
+    color: white;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    color: var(--White, #fff);
+    text-align: center;
+    font-family: "Proxima Nova";
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: bold;
+  }
+}
+
+.avatarImage {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+}
+
+.main {
+  padding: 20px;
+  background-color: #fff;
+  flex: 1;
+}
